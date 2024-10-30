@@ -1,0 +1,60 @@
+the app needs to include all the previous features
+
+Video Playback: Allows video selection and playback. 
+Screenshot Capture: Captures screenshots with a dedicated button and saves the image and timestamp.
+Frame-by-Frame Navigation: Moves through the video frame-by-frame.
+Preview Segments: Plays each screenshot position for a couple of seconds.
+Screenshot Display: Screenshots are displayed side-by-side, with hover-triggered buttons.
+IndexedDB Storage: Saves all videos and screenshots persistently in IndexedDB.
+GalleryPage: Displays all saved videos and associated screenshots, allowing users to load videos and jump to specific timestamps.
+Style: All elements need to styled with modern good looking css styles
+
+
+Create the code for the following app.
+
+Objectic: The app must include all the features bedlow
+
+App name: video-screenshot-app
+
+Folder Structure and File names: Use the following folder structure and names of files given. 
+
+src/
+├── components/
+|   ├── Layout.js              // Component that creates the layout for the app
+|   ├── Menu.js                // Main menu component
+|   ├── SubMenu.js             // SubMenu component
+|   ├── VideoPlayer.js         // Main video player component with all functionalities
+│   ├── ScreenshotList.js      // Displays the screenshots with hover effects
+|   ├── AllVideos.js           // Component that lists all videos stored by the app
+│   └── IndexedDB.js           // Handles IndexedDB setup and CRUD operations
+├── Home.js                     // Main app file
+├── App.js                     // Main app file
+├── App.css                    // Styling for the app
+└── index.js                   // Entry point
+
+
+
+Layout: 
+Add the following in Layout.js
+Create a responsive layout that includes a sliding main menu from the side.
+The borders of main layout sections should be seen in wireframe.
+A toggle-menu button that floats at the top left of the screen allows opening the menu. 
+The toggle-menu button should use modern css and have an appropriate icon. 
+The toggle-menu button displays the menu with a smooth animation. When the menu is shown the toggle-menu button is hidden
+The side-menu includes the following sub items "Home", "Projects", "Settings"
+
+
+i want to be able take images of the video and save them in a list that i can click on and jump to the position of the video that the image was taken from
+
+I also need stying and the additional features you just mentioned added
+
+
+
+Video Player functionality:
+Add the ReactPlayer to the home page. 
+You must be able to resive the player by moving a small handle to the bottom right of the player.
+Implement a button that allows selecting a file to play.
+Implement another button called "Screenshot". When the button is clicked, implement take images of the video and save them in a list that i can click on and jump to the position of the video that the image was taken from
+
+Fix bugs encountered:
+ReactPlayer component does not directly expose a getVideo method. Instead, we should be using the ref correctly to access the video element.

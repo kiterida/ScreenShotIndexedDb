@@ -1,0 +1,27 @@
+i want to create a react app that plays video.
+i want to be able take images of the video and save them in a list that i can click on and jump to the position of the video that the image was taken from
+i need a button that allows me to select a video to play
+I also need stying and the additional features you just mentioned added
+
+ReactPlayer component does not directly expose a getVideo method. Instead, we should be using the ref correctly to access the video element.
+
+i need buttons that can move frame by frame through the video
+also I want to change how the screenshot is taken. Instead of clicking on the video. I want a seperate button that you press to generate the screenshot.
+I want to keep all the previous functionality
+
+keep all that and add the following
+i want another button called "Preview Segments"
+When the button is called I want a routine that starts the player playiny from the position of the first screenshot in the list for 2 seconds and then jump to the position of the next etc
+I want the buttons for the screenshots only to appear when the mouse hovers over each screenshot
+i want to be able to save all the screenshots locally against the video that it was taken from.
+It needs to record the file location and know where to look for all the screenshots associated with the file.
+When the app loads. it will display all the screenshots from all the videos and if you click on the video it loads the file and plays from that position
+Use IndexedDB to record all the information
+Fixing the Issue
+Here's how to modify the relevant part of the code to avoid this error:
+Instead of trying to directly modify the currentScreenshots based on the index, we should create a new state variable to hold the hover state.
+Maintain a separate state variable for managing which screenshot's buttons should be shown.
+
+
+i need to be able to resize the video
+i also want the screenshots displayed side by side and another slider that can control the amount of screenshots are displayed per row.

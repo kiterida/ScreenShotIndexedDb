@@ -1,0 +1,54 @@
+/* Dark theme background and text color */
+.app-layout {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.content {
+  transition: margin-left 0.3s ease;
+}
+
+.offcanvas-locked {
+  background-color: #1c1c1c;
+  color: #e0e0e0;
+}
+
+.nav-link {
+  color: #bb86fc;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+button[style*="position: fixed"] {
+  background-color: #bb86fc;
+  color: #ffffff;
+  border: none;
+}
+
+button[style*="position: fixed"]:hover {
+  background-color: #9a67ea;
+}
+
+.lock-button {
+  background-color: transparent;
+  border: 1px solid #bb86fc;
+  color: #bb86fc;
+  margin-top: 10px;
+}
+
+.lock-button:hover {
+  background-color: #bb86fc;
+  color: #ffffff;
+}
+
+.resizer {
+  width: 5px;
+  cursor: ew-resize;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}

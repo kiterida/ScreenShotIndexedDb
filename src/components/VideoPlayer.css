@@ -1,0 +1,36 @@
+.video-player.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .dark-input,
+  .dark-button {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+  }
+  
+  .dark-input {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .dark-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dark-button:hover {
+    background-color: #555555;
+  }
+  
+  .react-player {
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
